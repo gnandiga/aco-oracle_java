@@ -177,6 +177,7 @@ define oracle_java::installation (
       }
       '7'     : {
         case $min_version {
+          '181'    : { $buildnumber = '-b00' }
           '80'    : { $buildnumber = '-b15' }
           '79'    : { $buildnumber = '-b15' }
           '76'    : { $buildnumber = '-b13' }
