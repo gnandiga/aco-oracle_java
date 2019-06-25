@@ -90,7 +90,7 @@ class oracle_java::javalist {
         '2'     : { $buildnumber = '-b13' }
         '1'     : { $buildnumber = '-b08' }
         '0'     : { $buildnumber = '' }
-        default : { fail("Unreleased Java SE version ${oracle_java::version_real}") }
+        default : { $buildnumber = '' }
       }
     }
     '6'     : {
